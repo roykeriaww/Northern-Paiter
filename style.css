@@ -789,4 +789,136 @@ footer small {
     height: 220px;
     object-fit: cover;
     display: block;
+}/* =========================
+   T-SHIRT SECTION
+========================= */
+
+.tshirt-section {
+    padding: 90px 20px;
+    background: #101521;
+}
+
+.tshirt-section .section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.tshirt-section .section-title p {
+    color: #ffd400;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.tshirt-section .section-title h2 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+
+/* =========================
+   T-SHIRT GRID
+========================= */
+
+.tshirt-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* =========================
+   T-SHIRT CARD
+========================= */
+
+.tshirt-card {
+    background: #121925;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    overflow: hidden;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.tshirt-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   T-SHIRT IMAGE
+========================= */
+
+.tshirt-card img {
+    width: 100%;
+    height: 330px;
+
+    display: block;
+
+    object-fit: contain;
+
+    background: #080b12;
+
+    padding: 15px;
+}
+
+
+/* =========================
+   T-SHIRT INFO
+========================= */
+
+.tshirt-info {
+    padding: 22px;
+}
+
+.tshirt-info span {
+    color: #ffd400;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.tshirt-info h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.tshirt-info p {
+    color: #aeb6c5;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .tshirt-section {
+        padding: 70px 15px;
+    }
+
+    .tshirt-section .section-title h2 {
+        font-size: 25px;
+    }
+
+    .tshirt-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tshirt-card img {
+        height: 300px;
+    }
+
 }
