@@ -1053,4 +1053,75 @@ footer small {
         padding: 22px;
     }
 
+}/* =========================
+   REGISTER MOBILE UPGRADE
+========================= */
+
+@media (max-width: 768px) {
+
+    .member-register-section {
+        padding: 60px 16px;
+    }
+
+    .member-register-section .section-title {
+        margin-bottom: 28px;
+    }
+
+    .member-register-section .section-title p {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .member-register-section .section-title h2 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .register-card {
+        width: 100%;
+        padding: 22px 18px;
+
+        border-radius: 16px;
+    }
+
+    .register-note {
+        font-size: 13px;
+        line-height: 1.6;
+        text-align: center;
+
+        color: #aeb6c5;
+
+        margin-bottom: 25px;
+    }
+
+    .form-group {
+        margin-bottom: 17px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+        margin-bottom: 7px;
+    }
+
+    .form-group input {
+        width: 100%;
+        height: 48px;
+
+        padding: 0 13px;
+
+        font-size: 14px;
+
+        border-radius: 9px;
+    }
+
+    .register-btn {
+        height: 50px;
+
+        margin-top: 8px;
+
+        border-radius: 9px;
+
+        font-size: 13px;
+        letter-spacing: 0.5px;
+    }
 }
