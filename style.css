@@ -1124,4 +1124,156 @@ footer small {
         font-size: 13px;
         letter-spacing: 0.5px;
     }
+}/* =========================
+   RIDE COUNTDOWN
+========================= */
+
+.ride-countdown {
+    padding: 70px 20px;
+
+    background: #101521;
+}
+
+.countdown-card {
+    max-width: 1000px;
+    margin: auto;
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    background: #121925;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-small {
+    color: #ffd400;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.countdown-card h2 {
+    color: #ffffff;
+
+    font-size: 32px;
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+.countdown-date {
+    color: #aeb6c5;
+
+    font-size: 15px;
+
+    margin-bottom: 30px;
+}
+
+.countdown-timer {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    max-width: 750px;
+
+    margin: auto;
+}
+
+.count-box {
+    padding: 22px 10px;
+
+    background: #080b12;
+
+    border: 1px solid rgba(20, 100, 255, 0.25);
+
+    border-radius: 14px;
+}
+
+.count-box span {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.count-box small {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #ffd400;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.countdown-message {
+    margin-top: 28px;
+
+    color: #aeb6c5;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   COUNTDOWN MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .ride-countdown {
+        padding: 55px 15px;
+    }
+
+    .countdown-card {
+        padding: 30px 15px;
+
+        border-radius: 16px;
+    }
+
+    .countdown-card h2 {
+        font-size: 23px;
+
+        line-height: 1.3;
+    }
+
+    .countdown-date {
+        font-size: 13px;
+    }
+
+    .countdown-timer {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .count-box {
+        padding: 17px 8px;
+    }
+
+    .count-box span {
+        font-size: 30px;
+    }
+
+    .count-box small {
+        font-size: 10px;
+    }
+
 }
