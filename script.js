@@ -62,7 +62,7 @@ function joinGroup() {
         "Group contact will be added here later."
     );
 
-}/* =========================
+/* =========================
    MEMBER REGISTRATION
 ========================= */
 
@@ -70,7 +70,7 @@ const memberForm = document.getElementById("memberForm");
 
 if (memberForm) {
 
-    memberForm.addEventListener("submit", function(event) {
+    memberForm.addEventListener("submit", function (event) {
 
         event.preventDefault();
 
@@ -79,8 +79,13 @@ if (memberForm) {
         const location = document.getElementById("memberLocation").value.trim();
         const bike = document.getElementById("memberBike").value.trim();
 
-        const message = `
-🏍️ NORTHERN PAITER
+        if (!name || !age || !location || !bike) {
+            alert("Sila isi semua maklumat terlebih dahulu.");
+            return;
+        }
+
+        const message =
+`🏍️ NORTHERN PAITER
 MEMBER REGISTRATION
 
 Nama: ${name}
@@ -88,8 +93,7 @@ Umur: ${age}
 Stay: ${location}
 Moto: ${bike}
 
-Saya berminat untuk join Northern Paiter.
-`;
+Saya berminat untuk join Northern Paiter.`;
 
         const whatsappNumber = "601128904157";
 
@@ -99,9 +103,8 @@ Saya berminat untuk join Northern Paiter.
             "?text=" +
             encodeURIComponent(message);
 
-        window.open(whatsappURL, "_blank");
+        window.location.href = whatsappURL;
 
     });
 
 }
-```
