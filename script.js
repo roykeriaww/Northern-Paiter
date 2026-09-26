@@ -1,4 +1,3 @@
-```javascript
 /* =========================
    MOBILE MENU
 ========================= */
@@ -47,22 +46,6 @@ function scrollToSection(sectionId) {
 
 
 /* =========================
-   JOIN BUTTON
-========================= */
-
-function joinGroup() {
-    window.open(
-        "https://chat.whatsapp.com/E8qtWNcte0CHenEnZQ3XCM",
-        "_blank"
-    );
-}
-
-    alert(
-        "NORTHERN PAITER\n\n" +
-        "Group contact will be added here later."
-    );
-
-/* =========================
    MEMBER REGISTRATION
 ========================= */
 
@@ -70,7 +53,7 @@ const memberForm = document.getElementById("memberForm");
 
 if (memberForm) {
 
-    memberForm.addEventListener("submit", function (event) {
+    memberForm.addEventListener("submit", function(event) {
 
         event.preventDefault();
 
@@ -79,10 +62,19 @@ if (memberForm) {
         const location = document.getElementById("memberLocation").value.trim();
         const bike = document.getElementById("memberBike").value.trim();
 
+
+        /* CHECK FORM */
+
         if (!name || !age || !location || !bike) {
+
             alert("Sila isi semua maklumat terlebih dahulu.");
+
             return;
+
         }
+
+
+        /* WHATSAPP MESSAGE */
 
         const message =
 `🏍️ NORTHERN PAITER
@@ -95,13 +87,22 @@ Moto: ${bike}
 
 Saya berminat untuk join Northern Paiter.`;
 
+
+        /* WHATSAPP NUMBER */
+
         const whatsappNumber = "601128904157";
+
+
+        /* WHATSAPP LINK */
 
         const whatsappURL =
             "https://wa.me/" +
             whatsappNumber +
             "?text=" +
             encodeURIComponent(message);
+
+
+        /* OPEN WHATSAPP */
 
         window.location.href = whatsappURL;
 
