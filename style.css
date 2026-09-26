@@ -921,4 +921,136 @@ footer small {
         height: 300px;
     }
 
+}/* =========================
+   MEMBER REGISTRATION
+========================= */
+
+.member-register-section {
+    padding: 90px 20px;
+    background: #080b12;
+}
+
+.member-register-section .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.member-register-section .section-title p {
+    color: #ffd400;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.member-register-section .section-title h2 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.register-card {
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+
+    background: #121925;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    background: #101521;
+
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+.form-group input:focus {
+    border-color: #1464ff;
+}
+
+.form-group input::placeholder {
+    color: #737b8c;
+}
+
+.register-btn {
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #1464ff,
+        #e62929
+    );
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 25px rgba(20, 100, 255, 0.3);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .member-register-section {
+        padding: 70px 15px;
+    }
+
+    .member-register-section .section-title h2 {
+        font-size: 25px;
+    }
+
+    .register-card {
+        padding: 22px;
+    }
+
 }

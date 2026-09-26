@@ -62,5 +62,46 @@ function joinGroup() {
         "Group contact will be added here later."
     );
 
+}/* =========================
+   MEMBER REGISTRATION
+========================= */
+
+const memberForm = document.getElementById("memberForm");
+
+if (memberForm) {
+
+    memberForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const name = document.getElementById("memberName").value.trim();
+        const age = document.getElementById("memberAge").value.trim();
+        const location = document.getElementById("memberLocation").value.trim();
+        const bike = document.getElementById("memberBike").value.trim();
+
+        const message = `
+🏍️ NORTHERN PAITER
+MEMBER REGISTRATION
+
+Nama: ${name}
+Umur: ${age}
+Stay: ${location}
+Moto: ${bike}
+
+Saya berminat untuk join Northern Paiter.
+`;
+
+        const whatsappNumber = "601128904157";
+
+        const whatsappURL =
+            "https://wa.me/" +
+            whatsappNumber +
+            "?text=" +
+            encodeURIComponent(message);
+
+        window.open(whatsappURL, "_blank");
+
+    });
+
 }
 ```
